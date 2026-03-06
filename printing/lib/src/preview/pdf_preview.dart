@@ -356,7 +356,7 @@ class PdfPreviewState extends State<PdfPreview> {
       actions.add(PdfShareAction(
         filename: widget.pdfFileName,
         onShared:
-            widget.onPrinted == null ? null : () => widget.onPrinted!(context),
+            widget.onShared == null ? null : () => widget.onShared!(context),
       ));
     }
 
